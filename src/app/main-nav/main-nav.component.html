@@ -13,16 +13,18 @@
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       @if (isHandset$ | async) {
-        <button
-          type="button"
-          aria-label="Toggle sidenav"
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
           matIconButton
-          (click)="drawer.toggle()">
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        </button>
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
       }
       <span>ud-angular-config</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <main>
+      <h2>This works!</h2>
+    </main>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -12,7 +12,8 @@ import { map, shareReplay } from 'rxjs/operators';
 @Component({
   selector: 'app-main-nav',
   templateUrl: './main-nav.component.html',
-  styleUrl: './main-nav.component.css',
+  styleUrls: ['./main-nav.component.css'],
+  standalone: true,
   imports: [
     MatToolbarModule,
     MatButtonModule,
